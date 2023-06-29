@@ -1,0 +1,131 @@
+h1 {
+  text-align: center;
+  color: var(--color-gray-100);
+  padding-top: var(--space-4);
+  margin-bottom: 0;
+}
+
+svg {
+  height: 60%;
+  width: 65%;
+}
+
+main {
+  height: calc(100vh - 7.5rem);
+}
+
+.signup-main {
+  height: calc(100vh - 11.5rem);
+  background-color: var(--color-gray-600);
+  border-radius: var(--border-radius-medium);
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 90%;
+}
+
+.signup > svg {
+  height: 50%;
+  margin-top: 0.25rem;
+  width: 100%;
+}
+
+form {
+  max-width: 25rem;
+  height: 70%;
+}
+
+.signup > form {
+  margin: var(--space-8) auto;
+  padding: var(--space-4);
+  background-color: var(--color-gray-600);
+  border-radius: var(--border-radius-medium);
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+
+  width: 90%;
+}
+
+form a {
+  color: var(--color-primary-200);
+}
+
+form a:hover,
+form a:active {
+  color: var(--color-primary-400);
+}
+
+.alert > p {
+  margin-top: var(--space-4);
+  width: 100%;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login p {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--space-2);
+}
+
+.signup > form > p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin: 0; */
+  width: 100%;
+  margin: var(--space-2);
+}
+
+.signup form {
+  padding: 0;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+  margin: var(--space-8) auto;
+  padding: var(--space-4);
+  background-color: var(--color-gray-600);
+  border-radius: var(--border-radius-medium);
+  text-align: center;
+}
+
+.login span {
+  margin-top: var(--space-4);
+}
+
+@media (min-width: 48rem) {
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .signup > svg {
+    height: 60%;
+    width: 100%;
+    margin: 2.5rem 0;
+  }
+
+  .signup-main {
+    width: 60vw;
+    flex-direction: column;
+    margin-top: 2.5rem;
+  }
+
+  .signup {
+    flex-direction: row;
+  }
+}

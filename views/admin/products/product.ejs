@@ -1,0 +1,39 @@
+<%- include('../../shared/includes/head',{pageTitle:product.title}) %>
+    <link rel="stylesheet" href="/styles/single.css">
+
+    </head>
+
+    <body>
+        <%- include('../../shared/includes/header') %>
+            <main>
+                <div class="image">
+                    <img src="<%= product.imageUrl %>" alt="<%= product.title %>">
+                </div>
+                <div class="content">
+                    <h2 class="title">
+                        <%=product.title %>
+                    </h2>
+                    <p>
+                    <h3>Description</h3>
+                    <%= product.description %>
+                        </p>
+                        <div>
+                            <h3>Price</h3>
+                            <%= product.price %>
+                        </div>
+                        <div class="records">
+                            <h3>No of Orders in last month:</h3>
+                            <p>4</p>
+                        </div>
+                        <div class="product-item-actions">
+                            <a class="btn btn-alt" href="/admin/products/<%=product._id  %>">Edit</a>
+                            <a class="btn btn-alt" href="/admin/products">Back</a>
+
+                        </div>
+                </div>
+
+            </main>
+
+    </body>
+
+    <%- include('../../shared/includes/footer') %>

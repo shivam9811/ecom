@@ -1,0 +1,46 @@
+form hr {
+  border-color: var(--color-primary-200);
+  margin: var(--space-4);
+}
+
+label {
+  color: var(--color-gray-100);
+  margin-bottom: var(--space-2);
+  display: block;
+}
+
+input,
+textarea {
+  font: inherit;
+  padding: 0.2rem;
+  border-radius: var(--border-radius-small);
+  background-color: var(--color-gray-100);
+  border: none;
+}
+
+.btn {
+  margin-top: var(--space-4);
+}
+
+#switch-form {
+  display: block;
+  margin: var(--space-2);
+}
+
+#image-upload-control {
+  display: flex;
+  align-items: center;
+}
+
+#image-upload-control input {
+  width: 15rem;
+}
+
+#image-upload-control img {
+  margin-left: 1rem;
+  display: none;
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: var(--border-radius-small);
+}

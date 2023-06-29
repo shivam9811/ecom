@@ -1,0 +1,43 @@
+.file {
+  color: black;
+}
+input,
+textarea {
+  width: 100%;
+}
+
+main {
+  background-color: var(--color-gray-700);
+  padding: var(--space-4);
+  border-radius: var(--space-4);
+  margin: 1rem auto;
+  height: 80%;
+  margin-top: 6rem;
+}
+
+form {
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--space-4);
+}
+
+@media (min-width: 48rem) {
+  main {
+    margin-top: 2.4rem;
+    overflow-y: scroll;
+    height: 75%;
+  }
+
+  input,
+  textarea {
+    width: 90%;
+  }
+
+  ::-webkit-scrollbar {
+    background: var(--color-gray-700);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary-700);
+  }
+}
